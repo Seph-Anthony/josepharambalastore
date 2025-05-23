@@ -1,0 +1,173 @@
+/* General Body Styling (Add this to the top of your style.css or in a general section) */
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* Keep consistent font */
+    background-color: #f0f2f5; /* Light grey background for the entire page */
+    color: #343a40; /* Default text color for body */
+}
+
+/* --- New Modern Checkout Page Styling --- */
+
+.checkout-page-container {
+    background-color: #ffffff; /* Clean white background for the whole checkout section */
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* More subtle, spread-out shadow */
+}
+
+.checkout-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #212529; /* Darker text for main titles */
+    margin-bottom: 0.5rem;
+}
+
+.checkout-subtitle {
+    font-size: 1.15rem;
+    color: #6c757d;
+    margin-bottom: 3rem; /* More space below subtitle */
+}
+
+.checkout-section-card {
+    border: none; /* Remove default card border */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.checkout-section-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12); /* Slightly more pronounced shadow on hover */
+}
+
+.checkout-card-header {
+    background-color: #f8f9fa; /* Very light grey header background */
+    border-bottom: 1px solid #e9ecef; /* Light border at the bottom of header */
+    color: #343a40; /* Dark text for header */
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.checkout-card-header i {
+    font-size: 1.6rem;
+    color: #495057; /* Icon color slightly darker than header text */
+    margin-right: 12px;
+}
+
+.checkout-section-card .card-body {
+    padding: 2rem; /* Consistent padding inside card body */
+}
+
+.checkout-section-card .table {
+    margin-bottom: 0; /* Remove bottom margin from table */
+}
+
+.checkout-section-card .table thead th {
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+    color: #495057;
+    padding: 1rem 1.5rem; /* More padding for table headers */
+    font-size: 0.95rem;
+}
+
+.checkout-section-card .table tbody td {
+    vertical-align: middle;
+    padding: 1rem 1.5rem; /* More padding for table cells */
+    color: #343a40;
+}
+
+.checkout-section-card .table tfoot td {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-top: 2px solid #dee2e6; /* Stronger border for total row */
+    font-size: 1.1rem;
+}
+
+.checkout-section-card .table-light { /* For Grand Total row */
+    background-color: #f0f2f5 !important; /* Slightly distinct background for total row */
+    color: #212529 !important;
+}
+
+.checkout-section-card .form-label {
+    font-weight: 500;
+    color: #343a40;
+    margin-bottom: 0.5rem;
+}
+
+.checkout-section-card .form-control {
+    border-radius: 8px; /* Slightly more rounded corners for inputs */
+    padding: 0.9rem 1.2rem; /* More padding for inputs */
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    background-color: #fcfcfc; /* Very light background for inputs */
+}
+
+.checkout-section-card .form-control:focus {
+    border-color: #a2c6ff; /* A softer blue on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15); /* More subtle shadow */
+    background-color: #ffffff;
+}
+
+.place-order-final-btn {
+    background-color: #212529; /* Dark, almost black button */
+    border-color: #212529;
+    color: #ffffff;
+    padding: 15px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.place-order-final-btn:hover {
+    background-color: #343a40; /* Slightly lighter dark on hover */
+    border-color: #343a40;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-secondary { /* Reusing this for "Modify Cart" but ensure it fits */
+    border-radius: 8px;
+    font-weight: 500;
+    color: #6c757d;
+    border-color: #adb5bd;
+}
+.btn-outline-secondary:hover {
+    background-color: #e9ecef;
+    border-color: #e9ecef;
+    color: #495057;
+}
+
+.alert-info {
+    background-color: #e2f4ff; /* Light blue background for empty cart alert */
+    border-color: #cce5ff;
+    color: #004085;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 1.1rem;
+}
+
+.alert-info .alert-heading {
+    color: #002752;
+    font-weight: 700;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .checkout-section-card {
+        margin-bottom: 25px;
+    }
+    .checkout-page-container {
+        padding: 25px;
+    }
+    .checkout-title {
+        font-size: 2rem;
+    }
+    .checkout-subtitle {
+        margin-bottom: 2rem;
+    }
+    .checkout-section-card .card-body {
+        padding: 1.5rem;
+    }
+}

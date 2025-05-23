@@ -1,0 +1,23 @@
+{
+    "name": "aries/mini-framework-store",
+    "description": "A simple online store based from mini-framework",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Aries\\MiniFrameworkStore\\": "app/"
+        },
+        "files": [
+            "helpers/functions.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Aries Vincent Dajay",
+            "email": "avdajay@gmail.com"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "^3.9",
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
